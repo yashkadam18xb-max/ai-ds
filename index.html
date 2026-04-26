@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI & DS Lab Experiments</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1117;
+  color: #e6edf3;
+}
+
+header {
+  background: #161b22;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #30363d;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: #161b22;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #30363d;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #e6edf3;
+  border-bottom: 1px solid #30363d;
+}
+
+.sidebar a:hover {
+  background: #21262d;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+pre {
+  background: #0d1117;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-x: auto;
+  border: 1px solid #30363d;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ea043;
+}
+</style>
+
+<script>
+function copyCode(id) {
+  var text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Code copied!");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>AI & DS Lab Experiments Website</h1>
+</header>
+
+<div class="container">
+
+<div class="sidebar">
+<a href="#setup">Setup Commands</a>
+<a href="#exp1">Experiment 1</a>
+<a href="#exp2">Experiment 2</a>
+<a href="#exp3">Experiment 3</a>
+<a href="#exp4">Experiment 4</a>
+<a href="#exp5">Experiment 5</a>
+<a href="#exp6">Experiment 6</a>
+<a href="#exp7">Experiment 7</a>
+<a href="#exp8">Experiment 8</a>
+<a href="#exp9">Experiment 9</a>
+<a href="#exp10">Experiment 10</a>
+</div>
+
+<div class="content">
+
+<!-- Setup Section -->
+<div class="section" id="setup">
+<h2>⚙️ Google Colab Setup Commands</h2>
+
+<h3>Command 1: Install PySpark</h3>
+<pre id="cmd1">
+!pip install pyspark
+</pre>
+<button onclick="copyCode('cmd1')">Copy Code</button>
+
+<h3>Command 2: Upload Files</h3>
+<pre id="cmd2">
+from google.colab import files
+uploaded = files.upload()
+</pre>
+<button onclick="copyCode('cmd2')">Copy Code</button>
+
+</div>
+
+<!-- Experiment Sections -->
+
+<div class="section" id="exp1">
+<h2>Experiment 1: Data Preparation</h2>
+<pre id="code1">
+# Paste your Experiment 1 code here
+</pre>
+<button onclick="copyCode('code1')">Copy Code</button>
+</div>
+
+<div class="section" id="exp2">
+<h2>Experiment 2: Data Visualization</h2>
+<pre id="code2">
+# Paste your Experiment 2 code here
+</pre>
+<button onclick="copyCode('code2')">Copy Code</button>
+</div>
+
+<div class="section" id="exp3">
+<h2>Experiment 3: Regression</h2>
+<pre id="code3">
+# Paste your Experiment 3 code here
+</pre>
+<button onclick="copyCode('code3')">Copy Code</button>
+</div>
+
+<div class="section" id="exp4">
+<h2>Experiment 4: Classification</h2>
+<pre id="code4">
+# Paste your Experiment 4 code here
+</pre>
+<button onclick="copyCode('code4')">Copy Code</button>
+</div>
+
+<div class="section" id="exp5">
+<h2>Experiment 5: Clustering</h2>
+<pre id="code5">
+# Paste your Experiment 5 code here
+</pre>
+<button onclick="copyCode('code5')">Copy Code</button>
+</div>
+
+<div class="section" id="exp6">
+<h2>Experiment 6: Recommendation System</h2>
+<pre id="code6">
+# Paste your Experiment 6 code here
+</pre>
+<button onclick="copyCode('code6')">Copy Code</button>
+</div>
+
+<div class="section" id="exp7">
+<h2>Experiment 7</h2>
+<pre id="code7">
+# Paste your Experiment 7 code here
+</pre>
+<button onclick="copyCode('code7')">Copy Code</button>
+</div>
+
+<div class="section" id="exp8">
+<h2>Experiment 8</h2>
+<pre id="code8">
+# Paste your Experiment 8 code here
+</pre>
+<button onclick="copyCode('code8')">Copy Code</button>
+</div>
+
+<div class="section" id="exp9">
+<h2>Experiment 9: Spark EDA</h2>
+<pre id="code9">
+# Paste your Experiment 9 code here
+</pre>
+<button onclick="copyCode('code9')">Copy Code</button>
+</div>
+
+<div class="section" id="exp10">
+<h2>Experiment 10: Streaming</h2>
+<pre id="code10">
+# Paste your Experiment 10 code here
+</pre>
+<button onclick="copyCode('code10')">Copy Code</button>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
